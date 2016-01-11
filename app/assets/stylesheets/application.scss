@@ -37,17 +37,35 @@ body {
   padding-top: 10%;
   text-transform: uppercase;
   color: #fff;
+
+  .main-text {
+    letter-spacing: 6px;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .sub-text {
+    font-size: 22px;
+    letter-spacing: 4px;
+    font-weight: lighter;
+  }
+
+@media screen and (min-width: 480px) {
   .main-text {
     letter-spacing: 6px;
     font-size: 70px;
     margin-bottom: 20px;
-  }
+}
+
   .sub-text {
     font-size: 30px;
     letter-spacing: 4px;
     font-weight: lighter;
   }
 }
+}
+
+
 
 .container {
   margin: 20px;
@@ -62,6 +80,17 @@ body {
 }
 
 .para-one {
+  width: 100%;
+  float: left;
+}
+
+.para-two {
+  width: 100%;
+  float: left;
+}
+
+@media screen and (min-width: 480px) {
+.para-one {
   width: 50%;
   float: left;
 }
@@ -69,6 +98,7 @@ body {
 .para-two {
   width: 50%;
   float: left;
+}
 }
  
 /*----- Menu -----*/
@@ -80,7 +110,17 @@ body {
 .menu ul {
   display:inline-block;
 }
- 
+
+.hide {
+  display:none;
+}
+
+@media screen and (min-width: 480px) {
+.hide {
+  display:initial;
+}
+}
+
 .menu li {
   margin:0px 50px 0px 0px;
   float:left;
@@ -89,10 +129,13 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
- 
+
+
+
 .menu li:last-child {
   margin-right:0px;
 }
+
  
 .menu a {
   color:#fff;
